@@ -4,14 +4,33 @@ body {
   background-color: #FBFACD;
   /*opacity: 0.7; wont work for bgimg bc it gets applied to elements*/
   /* background-image: url("./img/kitchen-pattern.jpg"); */
+
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+
 }
 
-.title {
+.header, .footer {
   font-family: "Snell Roundhand", Cursive; /*it works on mozilla :)*/
   font-size: 32px;
-  color: #7F669D;
+  color: white;
   background-color: #DEBACE;
   text-align: center;
+
+  flex: none;
+  margin: 0;
+  margin-bottom: 16px;
+  padding: 16px;
+}
+.header {
+}
+.footer {
+font-size: 16px;
+color: white;
+}
+.content {
+ flex: 1;
 }
 
 p {
